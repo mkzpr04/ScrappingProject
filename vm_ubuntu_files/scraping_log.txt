@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/main.py", line 1, in <module>
+    import crypto_metrics
+  File "/home/ubuntu/crypto_metrics.py", line 1, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+Volatilité Bitcoin : 0.01
+Volatilité Ethereum : 0.01
+Rendement Bitcoin sur 24h : 4.88%
+Rendement Ethereum sur 24h : -4.63%
+Rendement total Bitcoin : 4.88%
+Rendement total Ethereum : -4.63%
+Traceback (most recent call last):
+  File "/home/ubuntu/main.py", line 17, in <module>
+    crypto_visualisation.visualiser_crypto_data(file_path)
+  File "/home/ubuntu/crypto_visualisation.py", line 22, in visualiser_crypto_data
+    plt.savefig("/home/ihabm/ScrappingProject/bitcoin_prices.png")
+  File "/home/ubuntu/venv/lib/python3.10/site-packages/matplotlib/pyplot.py", line 1243, in savefig
+    res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]
+  File "/home/ubuntu/venv/lib/python3.10/site-packages/matplotlib/figure.py", line 3490, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/ubuntu/venv/lib/python3.10/site-packages/matplotlib/backend_bases.py", line 2184, in print_figure
+    result = print_method(
+  File "/home/ubuntu/venv/lib/python3.10/site-packages/matplotlib/backend_bases.py", line 2040, in <lambda>
+    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
+  File "/home/ubuntu/venv/lib/python3.10/site-packages/matplotlib/backends/backend_agg.py", line 481, in print_png
+    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
+  File "/home/ubuntu/venv/lib/python3.10/site-packages/matplotlib/backends/backend_agg.py", line 430, in _print_pil
+    mpl.image.imsave(
+  File "/home/ubuntu/venv/lib/python3.10/site-packages/matplotlib/image.py", line 1644, in imsave
+    image.save(fname, **pil_kwargs)
+  File "/home/ubuntu/venv/lib/python3.10/site-packages/PIL/Image.py", line 2591, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ihabm/ScrappingProject/bitcoin_prices.png'
+/home/ubuntu/scrape_crypto.sh: line 34: /home/ubuntu/venv/bin/python: No such file or directory
+/home/ubuntu/scrape_crypto.sh: line 34: /home/ubuntu/venv/bin/python: No such file or directory
