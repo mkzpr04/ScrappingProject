@@ -21,7 +21,7 @@ volume_24h_eth=$(grep -oP '(?<=<div class="BasePopover_base__T5yOf popover-base"
 timestamp=$(date +"%Y-%m-%d %H:%M:%S")
 
 # Définir le fichier CSV
-csv_file="/home/mkzpr0/ScrappingProject/crypto_data.csv"
+csv_file="/home/ihabm/ScrappingProject/crypto_data.csv"
 
 # Vérifier si le fichier CSV existe, sinon ajouter un header
 if [ ! -f "$csv_file" ]; then
