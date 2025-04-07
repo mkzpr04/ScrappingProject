@@ -19,7 +19,7 @@ def visualiser_crypto_data(file_path):
     plt.legend()
     plt.grid()
     plt.tight_layout()
-    plt.savefig("/home/ihabm/ScrappingProject/bitcoin_prices.png")
+    plt.savefig("/home/ubuntu/ScrappingProject/bitcoin_prices.png")
     plt.show()
 
     # Ethereum
@@ -32,5 +32,5 @@ def visualiser_crypto_data(file_path):
     plt.legend()
     plt.grid()
     plt.tight_layout()
-    plt.savefig("/home/mkzpr0/ScrappingProject/ethereum_prices.png")
+    plt.savefig("/home/ubuntu/ScrappingProject/ethereum_prices.png")
     plt.show()

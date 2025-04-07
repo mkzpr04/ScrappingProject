@@ -1,7 +1,7 @@
 import crypto_metrics
 import crypto_visualisation
 
-file_path = "/home/ihabm/ScrappingProject/crypto_data.csv"
+file_path = "/home/ubuntu/ScrappingProject/crypto_data.csv"
 
 # calcul des métriques
 metrics = crypto_metrics.calcul_metrics(file_path)

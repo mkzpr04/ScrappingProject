@@ -21,7 +21,7 @@ volume_24h_eth=$(grep -oP '(?<=<div class="BasePopover_base__T5yOf popover-base"
 timestamp=$(date +"%Y-%m-%d %H:%M:%S")
 
 # Définir le fichier CSV
-csv_file="/home/ihabm/ScrappingProject/crypto_data.csv"
+csv_file="/home/ubuntu/ScrappingProject/crypto_data.csv"
 
 # Vérifier si le fichier CSV existe, sinon ajouter un header
 if [ ! -f "$csv_file" ]; then
@@ -30,3 +30,5 @@ fi
 # Ajouter la nouvelle ligne avec timestamp
 echo "$timestamp,$price_btc,$market_cap_btc,$volume_24h_btc,$price_eth,$market_cap_eth,$volume_24h_eth" >> "$csv_file"
 
+# Appel du script Python pour calculer les métriques et générer les visualisations
+/home/ubuntu/venv/bin/python /home/ubuntu/ScrappingProject/main.py

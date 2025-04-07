@@ -8,5 +8,3 @@ This project aims to create an interactive dashboard for real-time analysis and 
 2. **Interactive Dashboard**: Build a dynamic dashboard with **Dash (Python)** to visualize the collected data. The dashboard will display a time series graph of prices, as well as basic financial analysis like **volatility** and **moving averages**.
 
 
-*Further details on the features and architecture of the project will be added later.*
-
